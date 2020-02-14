@@ -4,10 +4,10 @@ import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 
 import HomePage from "./pages/HomePage/HomePage";
-import ShopPage from "./pages/ShopPage/Shop";
-import Header from "./components/Header/Header";
+import ShopPage from "./pages/ShopPage/ShopPage";
+import CheckoutPage from "./pages/CheckoutPage/CheckoutPage";
 import SignInAndSignUp from "./pages/SignInAndSingUp/SignInAndSingUp";
-import CheckoutPage from "./pages/Checkout/Checkout";
+import Header from "./components/Header/Header";
 
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 import { setCurrentUser } from "./redux/user/userActions";

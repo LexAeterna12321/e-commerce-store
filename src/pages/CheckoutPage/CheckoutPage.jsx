@@ -6,7 +6,7 @@ import {
   selectCartTotal
 } from "../../redux/cart/cartSelectors";
 import CheckoutItem from "../../components/CheckoutItem/CheckoutItem";
-import "./Checkout.scss";
+import "./CheckoutPage.scss";
 
 const CheckoutPage = ({ cartItems, cartItemsTotalSumm }) => (
   <div className="checkout-page">
