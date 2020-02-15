@@ -6,7 +6,7 @@ import { createStructuredSelector } from "reselect";
 import HomePage from "./pages/HomePage/HomePage";
 import ShopPage from "./pages/ShopPage/ShopPage";
 import CheckoutPage from "./pages/CheckoutPage/CheckoutPage";
-import SignInAndSignUp from "./pages/SignInAndSingUp/SignInAndSingUp";
+import SignInAndSignUp from "./pages/SignInAndSingUp/SignInAndSignUp";
 import Header from "./components/Header/Header";
 
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
