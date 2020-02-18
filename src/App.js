@@ -13,6 +13,7 @@ import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 import { setCurrentUser } from "./redux/user/userActions";
 import { selectCurrentUser } from "./redux/user/userSelectors";
 import "./App.css";
+
 class App extends React.Component {
   unsubscribeFormAuth = null;
 
@@ -21,6 +22,7 @@ class App extends React.Component {
     this.unsubscribeFormAuth = auth.onAuthStateChanged(async userAuth => {
       if (userAuth) {
         const userRef = await createUserProfileDocument(userAuth);
+
         userRef.onSnapshot(snapshot =>
           setCurrentUser({
             currentUser: {
